@@ -45,7 +45,7 @@ An end-to-end job portal web application built using **React**, **TypeScript**, 
 
 ## 🖼️ Screenshots
 
-> _(Optional: Add image links or GIFs of your UI here)_
+> _ <img src="./public/Online-Dream-Career-Portal.png" alt="Portfolio Website Banner"> _
 
 ---
 
