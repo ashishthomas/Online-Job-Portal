@@ -1,4 +1,3 @@
-import React from "react";
 import { MapPin, Clock, DollarSign, Star, Bookmark } from "lucide-react";
 import type { Job } from "../types";
 

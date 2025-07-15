@@ -1,4 +1,3 @@
-import React from "react";
 import { MapPin, Users, ExternalLink, Briefcase } from "lucide-react";
 import type { Company } from "../types";
 
