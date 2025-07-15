@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import JobCard from "./components/JobCard";
@@ -14,12 +14,21 @@ function App() {
   const [selectedJob, setSelectedJob] = useState<Job | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const [user, setUser] = useState<any>(null);
   const [filters, setFilters] = useState({
     location: "",
     jobType: "",
     salaryRange: "",
     category: "",
   });
+
+  // Check for existing user session on app load
+  useEffect(() => {
+    const currentUser = localStorage.getItem("currentUser");
+    if (currentUser) {
+      setUser(JSON.parse(currentUser));
+    }
+  }, []);
 
   const handleFilterChange = (key: string, value: string) => {
     setFilters((prev) => ({ ...prev, [key]: value }));
@@ -51,12 +60,26 @@ function App() {
     setCurrentView("jobs");
   };
 
+  const handleAuthSuccess = (userData: any) => {
+    setUser(userData);
+    console.log("User authenticated:", userData); // Debug log
+  };
+
+  const handleSignOut = () => {
+    localStorage.removeItem("currentUser");
+    setUser(null);
+    console.log("User signed out"); // Debug log
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Header
         onSearch={handleSearch}
         currentView={currentView}
         onViewChange={setCurrentView}
+        user={user}
+        onAuthSuccess={handleAuthSuccess}
+        onSignOut={handleSignOut}
       />
 
       {currentView === "jobs" && searchQuery === "" && (

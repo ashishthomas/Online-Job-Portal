@@ -40,7 +40,7 @@ export default function Hero({ onSearch }: HeroProps) {
                 placeholder="Search for jobs, companies, or keywords..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-14 pr-32 py-4 text-lg rounded-full border-0 text-gray-900 placeholder-gray-300 focus:ring-4 focus:ring-blue-300 focus:outline-none"
+                className="w-full pl-14 pr-32 py-4 text-lg rounded-full border-0 text-white placeholder-gray-300 focus:ring-4 focus:ring-blue-300 focus:outline-none"
               />
               <button
                 type="submit"

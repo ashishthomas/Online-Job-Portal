@@ -58,7 +58,7 @@ export default function FilterSidebar({
       {/* Sidebar */}
       <div
         className={`
-        fixed lg:static inset-y-0 left-0 z-100 w-80 bg-white border-r border-gray-200 transform transition-transform duration-300 ease-in-out
+        fixed lg:static inset-y-0 left-0 z-30 w-80 bg-white border-r border-gray-200 transform transition-transform duration-300 ease-in-out
         ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
       `}
       >
