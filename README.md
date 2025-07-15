@@ -4,6 +4,26 @@ An end-to-end job portal web application built using **React**, **TypeScript**, 
 
 ---
 
+<div align="center">
+  <br />
+  <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank">
+   <img src="./public/Online-Dream-Career-Portal.png" alt="Portfolio Website Banner"> 
+  </a>
+  <br />
+  <div>
+    <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+     <img src="https://img.shields.io/badge/-TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/-TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+    <img src="https://img.shields.io/badge/-Lucide Icons-FD4D4D?style=for-the-badge&logo=lucide" alt="Lucide Icons" />
+   
+  </div>
+  <h3 align="center"> Create a Job Portal with React, TypeScript, Tailwind CSS, and Vite </h3>
+  <br />
+</div>
+
+---
+
 ## 📌 Table of Contents
 
 - [Features](#-features)
@@ -45,7 +65,7 @@ An end-to-end job portal web application built using **React**, **TypeScript**, 
 
 ## 🖼️ Screenshots
 
-> _ <img src="./public/Online-Dream-Career-Portal.png" alt="Portfolio Website Banner"> _
+> _ Coming Soon_
 
 ---
 
@@ -63,22 +83,10 @@ An end-to-end job portal web application built using **React**, **TypeScript**, 
 
 ---
 
-## 📁 Folder Structure
+## 🔗 Useful Links
 
-```bash
-online-job-portal/
-├── public/                # Static files like favicon, manifest
-├── src/
-│   ├── assets/            # Image & media files
-│   ├── components/        # Reusable components (Header, JobCard, etc.)
-│   ├── data/              # Sample JSON or static mock data
-│   ├── pages/             # Route-level components (Home, JobDetails)
-│   ├── routes/            # Route configs with React Router
-│   ├── types/             # Custom TypeScript types/interfaces
-│   ├── App.tsx            # Main App wrapper
-│   └── main.tsx           # Root entry file
-├── index.html             # HTML template
-├── package.json           # NPM dependencies and scripts
-├── vite.config.ts         # Vite build configuration
-└── tailwind.config.ts     # Tailwind customization
-```
+- [React Documentation](https://reactjs.org/)
+- [Tailwind CSS Docs](https://tailwindcss.com/)
+- [Lucide Icons](https://lucide.dev/)
+- [Vite](https://vitejs.dev/)
+- [Vercel](https://vercel.com/)
