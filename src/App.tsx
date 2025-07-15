@@ -158,7 +158,11 @@ function App() {
       </div>
 
       {selectedJob && (
-        <JobDetail job={selectedJob} onClose={() => setSelectedJob(null)} />
+        <JobDetail
+          job={selectedJob}
+          onClose={() => setSelectedJob(null)}
+          user={user}
+        />
       )}
     </div>
   );
