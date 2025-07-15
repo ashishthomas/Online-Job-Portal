@@ -18,7 +18,7 @@ An end-to-end job portal web application built using **React**, **TypeScript**, 
     <img src="https://img.shields.io/badge/-Lucide Icons-FD4D4D?style=for-the-badge&logo=lucide" alt="Lucide Icons" />
    
   </div>
-  <h3 align="center"> Create a Job Portal with React, TypeScript, Tailwind CSS, and Vite </h3>
+  <h3 align="center"> Created a Job Portal with React, TypeScript, Tailwind CSS, and Vite </h3>
   <br />
 </div>
 
