@@ -1,69 +1,84 @@
-# React + TypeScript + Vite
+# 🧑‍💼 Online Job Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An end-to-end job portal web application built using **React**, **TypeScript**, **Tailwind CSS**, and **Vite**. This platform facilitates job seekers and employers with modern UI, real-time filtering, and smooth navigation. It mimics the core functionality of real-world job sites like Naukri, Indeed, or LinkedIn Jobs but with a simplified approach for learning and demonstration.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Table of Contents
 
-## Expanding the ESLint configuration
+- [Features](#-features)
+- [Screenshots](#-screenshots)
+- [Tech Stack](#-tech-stack)
+- [Folder Structure](#-folder-structure)
+- [Getting Started](#-getting-started)
+- [Available Scripts](#-available-scripts)
+- [Deployment](#-deployment)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Author](#-author)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### For Job Seekers:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 🔍 Browse and filter job listings by role, company, or location
+- 📄 View detailed job descriptions
+- 💾 Save/bookmark preferred jobs
+- 📝 Apply for jobs through the UI (demo flow)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### For Recruiters:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- ➕ Post new job openings
+- 🧾 Manage and edit existing listings
+- 👤 View list of applicants (static or API-integrated)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### General:
+
+- 🌗 Light/Dark mode toggle
+- ⚡ Real-time search and filtering
+- 🧩 Modular component-based UI
+- 📱 Fully responsive design for all devices
+
+---
+
+## 🖼️ Screenshots
+
+> _(Optional: Add image links or GIFs of your UI here)_
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech                 | Purpose                         |
+| -------------------- | ------------------------------- |
+| React                | Front-end framework             |
+| TypeScript           | Type safety and maintainability |
+| Vite                 | Fast bundler and dev server     |
+| Tailwind CSS         | Utility-first CSS styling       |
+| React Router DOM     | Routing and navigation          |
+| Lucide-React         | Modern icons                    |
+| Heroicons (optional) | UI icons                        |
+
+---
+
+## 📁 Folder Structure
+
+```bash
+online-job-portal/
+├── public/                # Static files like favicon, manifest
+├── src/
+│   ├── assets/            # Image & media files
+│   ├── components/        # Reusable components (Header, JobCard, etc.)
+│   ├── data/              # Sample JSON or static mock data
+│   ├── pages/             # Route-level components (Home, JobDetails)
+│   ├── routes/            # Route configs with React Router
+│   ├── types/             # Custom TypeScript types/interfaces
+│   ├── App.tsx            # Main App wrapper
+│   └── main.tsx           # Root entry file
+├── index.html             # HTML template
+├── package.json           # NPM dependencies and scripts
+├── vite.config.ts         # Vite build configuration
+└── tailwind.config.ts     # Tailwind customization
 ```

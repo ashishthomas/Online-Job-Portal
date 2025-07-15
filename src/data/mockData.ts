@@ -96,6 +96,22 @@ export const mockJobs: Job[] = [
     logo: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
     featured: false,
     category: 'Marketing'
+  },
+  {
+    id: '7',
+    title: 'Frontend Engineer',
+    company: 'WebTech Solutions',
+    location: 'San Francisco, CA',
+    type: 'Full-time',
+    salary: '$90,000 - $120,000',
+    description: 'Build and maintain responsive web applications using modern frameworks and libraries.',
+    requirements: ['HTML/CSS expertise', 'JavaScript proficiency', 'React/Next.js experience', 'Node.js knowledge'],
+    benefits: ['Health insurance', 'Remote work options', '401k matching', 'Professional development budget'],
+    postedDate: '2024-01-01',
+    deadline: '2024-02-01',
+    logo: 'https://images.pexels.com/photos/3184320/pexels-photo-3184320.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
+    featured: false,
+    category: 'Technology'
   }
 ];
 
@@ -132,5 +148,27 @@ export const mockCompanies: Company[] = [
     industry: 'Design',
     location: 'Remote',
     openPositions: 5
-  }
+  },
+  {
+    id: '4',
+    name: 'GrowthCo',
+    logo: 'https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
+    description: 'Digital marketing agency specializing in growth and engagement strategies.',
+    website: 'https://growthco.com',
+    size: '500-1000',
+    industry: 'Marketing',
+    location: 'Los Angeles, CA',
+    openPositions: 10
+  },
+  {
+    id: '6',
+    name: 'WebTech Solutions',
+    logo: 'https://images.pexels.com/photos/3184320/pexels-photo-3184320.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
+    description: 'Web development company focused on building scalable and responsive web applications.',
+    website: 'https://webtechsolutions.com',
+    size: '200-1000',
+    industry: 'Technology',
+    location: 'San Francisco, CA',
+    openPositions: 12 
+  },
 ];
