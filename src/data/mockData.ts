@@ -112,6 +112,22 @@ export const mockJobs: Job[] = [
     logo: 'https://images.pexels.com/photos/3184320/pexels-photo-3184320.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
     featured: false,
     category: 'Technology'
+  },
+  {
+    id: '8',
+    title: 'Data Analyst',
+    company: 'DataTech Solutions',
+    location: 'New York, NY',
+    type: 'Part-time',
+    salary: '$60,000 - $80,000',
+    description: 'Analyze complex datasets to drive business insights and build predictive models using machine learning techniques.',
+    requirements: ['Python/R proficiency', 'Machine learning experience', 'SQL expertise', 'Statistics background'],
+    benefits: ['Stock options', 'Research time', 'Conference budget', 'Mentorship program'],
+    postedDate: '2024-01-01',
+    deadline: '2024-02-01',
+    logo: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
+    featured: false,
+    category: 'Data Science'
   }
 ];
 
@@ -161,9 +177,9 @@ export const mockCompanies: Company[] = [
     openPositions: 10
   },
   {
-    id: '6',
+    id: '5',
     name: 'WebTech Solutions',
-    logo: 'https://images.pexels.com/photos/3184320/pexels-photo-3184320.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
+    logo: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
     description: 'Web development company focused on building scalable and responsive web applications.',
     website: 'https://webtechsolutions.com',
     size: '200-1000',
@@ -171,4 +187,15 @@ export const mockCompanies: Company[] = [
     location: 'San Francisco, CA',
     openPositions: 12 
   },
+  {
+  id: "6",
+  name: "DataTech Solutions",
+  logo: 'https://images.pexels.com/photos/3184320/pexels-photo-3184320.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
+  description: "Data analytics company specializing in data-driven insights and business intelligence.",
+  website: "https://datatechsolutions.com",
+  size: "50-100",
+  industry: "Data Science",
+  location: "New York, NY",
+  openPositions: 7
+}
 ];

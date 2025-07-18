@@ -1,5 +1,4 @@
-import React, { useState, useMemo, useEffect } from "react";
-// import Header from "./components/Header";
+import { useState, useMemo, useEffect } from "react";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero";
 import JobCard from "./components/JobCard";
@@ -16,11 +15,18 @@ function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [user, setUser] = useState<any>(null);
+
+  const FILTER_STORAGE_KEY = "job_filters";
+
   const [filters, setFilters] = useState({
     location: "",
     jobType: "",
     salaryRange: "",
     category: "",
+    experience: "",
+    companySize: "",
+    remoteOnly: false,
+    skills: [],
   });
 
   // Check for existing user session on app load
@@ -31,8 +37,38 @@ function App() {
     }
   }, []);
 
-  const handleFilterChange = (key: string, value: string) => {
-    setFilters((prev) => ({ ...prev, [key]: value }));
+  // Load from localStorage on mount
+  useEffect(() => {
+    const storedFilters = localStorage.getItem(FILTER_STORAGE_KEY);
+    if (storedFilters) {
+      try {
+        const parsed = JSON.parse(storedFilters);
+        setFilters((prev) => ({
+          ...prev,
+          ...parsed,
+          skills: Array.isArray(parsed.skills) ? parsed.skills : [],
+          remoteOnly: !!parsed.remoteOnly,
+        }));
+      } catch (err) {
+        console.error("Failed to parse stored filters:", err);
+      }
+    }
+  }, []);
+
+  // Save to localStorage on update
+  useEffect(() => {
+    localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify(filters));
+  }, [filters]);
+
+  // const handleFilterChange = (key: string, value: string) => {
+  //   setFilters((prev) => ({ ...prev, [key]: value }));
+  // };
+
+  const handleFilterChange = (key: string, value: any) => {
+    setFilters((prev) => ({
+      ...prev,
+      [key]: value,
+    }));
   };
 
   const filteredJobs = useMemo(() => {
